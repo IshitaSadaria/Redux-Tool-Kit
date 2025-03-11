@@ -1,9 +1,10 @@
-//main part of store is to bring the configure and create the configurestore
-
-import { configureStore } from "@reduxjs/toolkit"
-import todoReducer from "../features/todo/todoSlice"
+import { configureStore } from "@reduxjs/toolkit";
+import todoReducer from "../features/todo/todoSlice";
+import counterReducer from "../features/todo/counterSlice";
 
 export const store = configureStore({
-    reducer: todoReducer
-})
-
+  reducer: {
+    todo: todoReducer,
+    counter: counterReducer,
+  },
+});
