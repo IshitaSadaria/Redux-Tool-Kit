@@ -3,6 +3,7 @@ import './App.css'
 import AddTodo from './components/AddTodo'
 import Todo from './components/Todo'
 import Counter from './components/Counter'
+import Products from './components/Products'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -15,6 +16,11 @@ function App() {
       <hr />
       <br />
       <Counter />
+      <br />
+      <br />
+      <hr />
+      <br />
+      <Products />
     </>
   )
 }
